@@ -135,6 +135,7 @@ body {
 .btn-interested:hover,
 .btn-interested:focus {
   background: #615048;
+  outline: none;
 }
 
 .navigation-btn:active,
@@ -174,7 +175,7 @@ body {
   width: 11px;
   height: 10px;
   left: calc(50% -  -22px/2);
-  top: calc(50% - 10px/2 - 11px);
+  top: calc(50% - -10px/2 - 11px);
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 10px;
@@ -589,6 +590,7 @@ padding: 0;
 
 .social-item {
   width: 48px;
+  cursor: pointer;
 }
 
 .social-link {
@@ -597,7 +599,6 @@ padding: 0;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .social-item-youtube {
   background-image: url(./images/YouTube.svg);
