@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/ptsans-400.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(./fonts/ptsans-700.woff2) format("woff2");
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
@@ -9,19 +23,6 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url(./fonts/ptsans-400.woff2);
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url(./fonts/ptsans-700.woff2);
-  font-weight: 700;
 }
 
 .visually-hidden {
@@ -205,6 +206,10 @@ body {
   margin-bottom: 25px;
 }
 
+.welcome {
+  display: block;
+}
+
 .sedona-text {
   font-family: "PT Sans";
   font-weight: 700;
@@ -214,6 +219,7 @@ body {
   text-transform: uppercase;
   width: 620px;
   margin: 0 auto;
+  margin-bottom: 25px;
   padding-top: 63px;
   color: #333333;
 }
@@ -227,7 +233,6 @@ body {
   width: 651px;
   color: #333333;
   margin: 0 auto;
-  margin-top: 25px;
   margin-bottom: 90px;
 }
 
@@ -238,48 +243,54 @@ padding: 0;
 
 .advantage-list {
   display: flex;
-  height: 384px;
+  flex-wrap: wrap;
+  width: 1200px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.advantage-list:nth-child(2) {
-  height: 385px;
-}
 
 .advantage-item {
   width: 400px;
+  height: 385px;
   background: #82B3D3;
+  color: #ffffff;
 }
 
-.advantage-list:nth-of-type(2) .advantage-item:nth-child(1) {
+.advantage-item:nth-child(1),
+.advantage-img-item:nth-child(1) {
+  height: 384px;
+}
+
+.advantage-item:nth-child(3),
+.advantage-item:nth-child(5) {
   background: rgba(131, 179, 211, 0.12);
-}
-
-.advantage-list:nth-of-type(2) .advantage-item:nth-child(2) {
-  background: rgba(131, 179, 211, 0.2);
-}
-
-.advantage-list:nth-of-type(2) .advantage-item:nth-child(3) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-
-.advantage-list:nth-of-type(even) .texts-item {
   color: #000000;
-  margin-top: 113px;
+
+}
+
+.advantage-item:nth-child(4) {
+  background: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+
+.advantage-img {
+  display: block;
 }
 
 .texts-item {
- display: flex;
- flex-direction: column;
- align-items: center;
- margin: 0 auto;
- margin-top: 102px;
- width: 230px;
- color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 102px;
+  /* Узнать насчет 3 4 5 элемента и их текста  */
+  width: 230px;
 }
+
+
 
 .advantage-title {
   position: relative;
@@ -309,6 +320,11 @@ padding: 0;
   background: rgba(0, 0, 0, 0.3);
 }
 
+.advantage-item:nth-child(3) .advantage-title::before,
+.advantage-item:nth-child(4) .advantage-title::before,
+.advantage-item:nth-child(5) .advantage-title::before {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 .item-discription {
   font-family: "PT Sans";
@@ -320,7 +336,7 @@ padding: 0;
 }
 
 
-.text-sedona {
+.advantage-service-title {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
@@ -329,11 +345,12 @@ padding: 0;
   text-transform: uppercase;
   color: #000000;
   margin: 0 auto;
-  margin-top: 66px;
+  margin-top: 64px;
+  margin-bottom: 20px;
   width: 505px;
 }
 
-.text-sedona-description {
+.advantage-service-description {
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 22px;
@@ -341,7 +358,6 @@ padding: 0;
   text-align: center;
   color: #333333;
   margin: 0;
-  margin-top: 20px;
   margin-bottom: 64px;
 }
 
@@ -386,6 +402,7 @@ padding: 0;
   color: #000000;
   margin: 0;
   margin-top: 31px;
+  margin-bottom: 29px;
 }
 
 
@@ -398,7 +415,6 @@ padding: 0;
   text-align: center;
   color: #333333;
   margin: 0;
-  margin-top: 29px;
 }
 
 .interested {
@@ -501,14 +517,14 @@ padding: 0;
   text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 54px;
 }
 
 .appointment-form {
   display: flex;
-  margin: 0;
-  margin-top: 54px;
   width: 100%;
   height: 52px;
+  margin: 0;
 }
 
 .field-group {
@@ -623,7 +639,6 @@ padding: 0;
   color: #000000;
 }
 
-.logo-html {
-  display: flex;
-  padding-top: 7px;
+.logo-htmlacademy {
+  padding-top: 4px;
 }
