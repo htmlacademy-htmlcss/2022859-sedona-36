@@ -1,0 +1,858 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/ptsans-400.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(./fonts/ptsans-700.woff2) format("woff2");
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #F2F2F2;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.page-header {
+  color: #000000;
+  background: #F2F2F2;
+}
+
+.navigation-container {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: 0 auto;
+  height: 64px;
+  background-color: #ffffff;
+}
+
+.logo {
+  position: relative;
+  padding-left: 69px;
+  z-index: 1;
+}
+
+.logo-link-header {
+  margin: 0;
+  height: 0;
+}
+
+.vector {
+  display: block;
+}
+
+.navigation-list{
+  display: flex;
+  flex-direction: row;
+  width: 339px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  align-items: center;
+}
+
+.navigation-link {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 16px;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 70px;
+  width: 268px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-item {
+  position: relative;
+}
+
+
+/* .navigation-item:first-child {
+  border-bottom: 2px solid #756257;
+} */
+
+.navigation-link-user {
+  position: absolute;
+  padding: 24px 13px;
+}
+
+.nav-icons {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+.navigation-btn {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 36px;
+  background: #756157;
+  border-radius: 4px;
+  border: none;
+  margin: 0;
+  margin-left: 20px;
+  padding-left: 35px;
+  cursor: pointer;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.navigation-btn:hover,
+.navigation-btn:focus,
+.btn-interested:hover,
+.btn-interested:focus {
+  background: #615048;
+  outline: none;
+}
+
+.navigation-btn:active,
+.btn-interested:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-btn:disabled {
+  background: #E5E5E5;
+}
+
+/* .navigation-btn-title {
+
+  margin: 0;
+} */
+
+.navigation-item-user{
+  position: relative;
+  min-width: 44px;
+  min-height: 64px;
+}
+
+.favourites {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background: #7DB54F;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.count {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  left: calc(50% -  -22px/2);
+  top: calc(50% - -10px/2 - 11px);
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.main-index {
+  position: relative;
+  background-image: url(./images/index-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  padding-top: 51px;
+  flex-grow: 1;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.page-welcome {
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.welcome {
+  display: block;
+}
+
+.sedona-text {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  padding-top: 63px;
+  color: #333333;
+}
+
+.sedona-description {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  width: 651px;
+  color: #333333;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.advantage {
+margin: 0;
+padding: 0;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.advantage-item {
+  width: 400px;
+  height: 385px;
+  background: #82B3D3;
+  color: #ffffff;
+}
+
+.advantage-item:nth-child(1),
+.advantage-img-item:nth-child(1) {
+  height: 384px;
+}
+
+.advantage-item:nth-child(3),
+.advantage-item:nth-child(5) {
+  background: rgba(131, 179, 211, 0.12);
+  color: #000000;
+
+}
+
+.advantage-item:nth-child(4) {
+  background: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+
+.advantage-img {
+  display: block;
+}
+
+.texts-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 102px;
+  /* Узнать насчет 3 4 5 элемента и их текста  */
+  width: 230px;
+}
+
+
+
+.advantage-title {
+  position: relative;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 62px;
+  width: 175px;
+}
+
+.advantage-title::before {
+  content: '';
+  position: absolute;
+  top: 86px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.advantage-list:nth-of-type(even) .advantage-title::before{
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.advantage-item:nth-child(3) .advantage-title::before,
+.advantage-item:nth-child(4) .advantage-title::before,
+.advantage-item:nth-child(5) .advantage-title::before {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.item-discription {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin: 0;
+}
+
+
+.advantage-service-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 20px;
+  width: 505px;
+}
+
+.advantage-service-description {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.advantage-service {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-service-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantage-service-item {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-service-item:nth-child(2) {
+  background: #ffffff;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  height: 223px;
+  margin: 81px 85px;
+}
+
+.service-content h3 {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 29px;
+}
+
+
+
+.service-content p {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+}
+
+.interested {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.interested-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  width: 592px;
+  height: 214px;
+  margin: 96px 304px;
+}
+
+.interested-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.interested-description {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.btn-interested {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 376px;
+  height: 52px;
+  border-radius: 4px;
+  border: 0;
+  background: #756157;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscribe-index {
+  position: relative;
+  background-image: url(./images/index-footer.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+}
+
+.subscribe{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 684px;
+  height: 215px;
+  margin: 96px 258px 104px;
+}
+
+.subscribe-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-discription {
+  width: 475px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.appointment-form {
+  display: flex;
+  width: 100%;
+  height: 52px;
+  margin: 0;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.field {
+  width: 452px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  padding: 0;
+  border: 0;
+
+}
+
+.field::placeholder {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+  padding: 25px 345px 14px 20px;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 232px;
+  background: #82B3D3;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+
+}
+
+.form-btn span {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.page-footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.page-footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1060px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+}
+
+.social-footer {
+  display: flex;
+  width: 142px;
+  height: 50px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-item {
+  width: 48px;
+  cursor: pointer;
+}
+
+.social-link {
+  display: block;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item-youtube {
+  background-image: url(./images/YouTube.svg);
+}
+
+.social-item-vk {
+  background-image: url(./images/VK.svg);
+}
+
+.social-item-telegram {
+  background-image: url(./images/Telegram.svg);
+}
+
+.footer-phone-link {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.logo-htmlacademy {
+  padding-top: 4px;
+}
+
+
+/* Catalog */
+/*
+.main-catalog {
+  display: block;
+  width: 1200px;
+  background-image: url(./images/catalog-filter-backgroud.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 0;
+}
+
+.filter {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 412px;
+}
+
+.filter-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 35px;
+  width: 1060px;
+  height: 307px;
+}
+
+.filter-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 107px;
+  margin-bottom: 40px;
+}
+
+.filter-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.filter-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 21px;
+}
+
+.filter-item {
+  margin-right: 10px;
+}
+
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter {
+  position: relative;
+  display: flex;
+
+}
+
+.catalog-filter-group {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
+  border: none;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: 140px;
+}
+
+.catalog-filter-group:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 1060px;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sorting-index {
+  display: flex;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-item {
+  width: 338px;
+  height: 438px;
+  margin: 0;
+  margin-right: 20px;
+  border: 1px solid #7DB54F;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 20px;
+}
+
+.catalog-item-img {
+  display: block;
+  padding: 20px;
+}
+
+.catalog-item-text {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-description {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.price-item {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-align: right;
+} */
