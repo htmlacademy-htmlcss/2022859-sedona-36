@@ -51,8 +51,18 @@ body {
 }
 
 .logo {
+  position: relative;
   padding-left: 69px;
   z-index: 1;
+}
+
+.logo-link-header {
+  margin: 0;
+  height: 0;
+}
+
+.vector {
+  display: block;
 }
 
 .navigation-list{
@@ -100,8 +110,8 @@ body {
 } */
 
 .navigation-link-user {
- position: absolute;
- padding: 24px 13px;
+  position: absolute;
+  padding: 24px 13px;
 }
 
 .nav-icons {
@@ -281,6 +291,7 @@ padding: 0;
 }
 
 .texts-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -642,3 +653,206 @@ padding: 0;
 .logo-htmlacademy {
   padding-top: 4px;
 }
+
+
+/* Catalog */
+/*
+.main-catalog {
+  display: block;
+  width: 1200px;
+  background-image: url(./images/catalog-filter-backgroud.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding-top: 0;
+}
+
+.filter {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 412px;
+}
+
+.filter-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 35px;
+  width: 1060px;
+  height: 307px;
+}
+
+.filter-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 107px;
+  margin-bottom: 40px;
+}
+
+.filter-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.filter-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 21px;
+}
+
+.filter-item {
+  margin-right: 10px;
+}
+
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter {
+  position: relative;
+  display: flex;
+
+}
+
+.catalog-filter-group {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 70px;
+  border: none;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: 140px;
+}
+
+.catalog-filter-group:last-child {
+  margin-right: 0;
+}
+
+.catalog-filter-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-filter-text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 1060px;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.sorting-index {
+  display: flex;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-item {
+  width: 338px;
+  height: 438px;
+  margin: 0;
+  margin-right: 20px;
+  border: 1px solid #7DB54F;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.catalog-item:last-child {
+  margin-right: 0;
+}
+
+.catalog-item-title {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 20px;
+}
+
+.catalog-item-img {
+  display: block;
+  padding: 20px;
+}
+
+.catalog-item-text {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-description {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.price-item {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  text-align: right;
+} */
