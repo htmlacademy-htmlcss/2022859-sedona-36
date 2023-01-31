@@ -3,6 +3,7 @@
   font-style: normal;
   font-weight: 400;
   src: url(./fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   font-style: normal;
   font-weight: 700;
   src: url(./fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
 }
 
 body {
@@ -18,11 +20,21 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: #F2F2F2;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  user-select: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 .visually-hidden {
@@ -38,7 +50,8 @@ body {
 
 .page-header {
   color: #000000;
-  background: #F2F2F2;
+  background: #ffffff;
+  margin: 0 auto;
 }
 
 .navigation-container {
@@ -61,10 +74,6 @@ body {
   height: 0;
 }
 
-.vector {
-  display: block;
-}
-
 .navigation-list{
   display: flex;
   flex-direction: row;
@@ -78,15 +87,18 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   padding: 20px 16px;
-  color: #000000;
+  color: inherit;
+  text-transform: capitalize;
   text-align: center;
   text-decoration: none;
 }
+
+
 
 .navigation-user {
   display: flex;
@@ -102,7 +114,20 @@ body {
 
 .navigation-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 64px;
 }
+
+/* .navigation-item::after{
+  position: relative;
+  display: flex;
+  content: "";
+  width: 68px;
+  border-bottom: 2px solid #756257;
+  z-index: 1;
+  margin: 0 16px;
+} */
 
 
 /* .navigation-item:first-child {
@@ -142,7 +167,11 @@ body {
 }
 
 .navigation-btn:hover,
-.navigation-btn:focus,
+.navigation-btn:focus {
+  background: #615048;
+  outline: none;
+}
+
 .btn-interested:hover,
 .btn-interested:focus {
   background: #615048;
@@ -197,9 +226,20 @@ body {
 
 .main-index {
   position: relative;
+  color: #000000;
   background-image: url(./images/index-background.jpg);
+  background-color: #F2F2F2;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.page-welcome::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 57px;
+  background-image: url(./images/divider.svg);
+  margin-top: 25px;
 }
 
 .main-container {
@@ -207,17 +247,11 @@ body {
   flex-grow: 1;
   margin: 0 auto;
   background-color: #ffffff;
-}
-
-.page-welcome {
-  width: 458px;
-  height: 352px;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  width: 1200px;
 }
 
 .welcome {
-  display: block;
+  margin: 0 auto;
 }
 
 .sedona-text {
@@ -230,7 +264,7 @@ body {
   width: 620px;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding-top: 63px;
+  padding-top: 69px;
   color: #333333;
 }
 
@@ -283,11 +317,6 @@ padding: 0;
 .advantage-item:nth-child(4) {
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
-}
-
-
-.advantage-img {
-  display: block;
 }
 
 .texts-item {
@@ -483,6 +512,7 @@ padding: 0;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .subscribe-index {
@@ -571,10 +601,7 @@ padding: 0;
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
   border: 0;
-
-}
-
-.form-btn span {
+  cursor: pointer;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
@@ -620,23 +647,16 @@ padding: 0;
   cursor: pointer;
 }
 
+.social-item-link:hover {
+  outline: #ffffff;
+  background-color: #68A2CA;
+}
+
 .social-link {
   display: block;
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.social-item-youtube {
-  background-image: url(./images/YouTube.svg);
-}
-
-.social-item-vk {
-  background-image: url(./images/VK.svg);
-}
-
-.social-item-telegram {
-  background-image: url(./images/Telegram.svg);
 }
 
 .footer-phone-link {
@@ -656,203 +676,121 @@ padding: 0;
 
 
 /* Catalog */
-/*
-.main-catalog {
-  display: block;
+
+.main-inner {
+  padding-top: 35px;
+  flex-grow: 1;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
   width: 1200px;
-  background-image: url(./images/catalog-filter-backgroud.jpg);
+}
+
+.main-catalog {
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding-top: 0;
+  background-image: url(./images/catalog-filter-backgroud.jpg);
 }
 
-.filter {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  height: 412px;
-}
-
-.filter-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 35px;
+.page-container {
   width: 1060px;
-  height: 307px;
-}
-
-.filter-header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 107px;
-  margin-bottom: 40px;
+  margin: 0 auto;
 }
 
 .filter-title {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
 }
 
+
 .filter-list {
-  position: relative;
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  align-items: center;
   margin: 0;
   padding: 0;
-  height: 21px;
 }
 
-.filter-item {
-  margin-right: 10px;
-}
-
-.filter-item:last-child {
-  margin-right: 0;
-}
-
-.catalog-filter {
-  position: relative;
-  display: flex;
-
-}
-
-.catalog-filter-group {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  margin-right: 70px;
-  border: none;
-}
-
-.catalog-filter-group:nth-child(2) {
-  margin-right: 140px;
-}
-
-.catalog-filter-group:last-child {
-  margin-right: 0;
-}
-
-.catalog-filter-title {
-  font-family: "PT Sans";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #ffffff;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 32px;
-}
-
-.catalog-filter-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.catalog-filter-text {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
+.filter-item-link {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .main-content {
   padding: 0;
   margin: 0 auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 1060px;
 }
 
-.sorting-container {
+.catalog-filter {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
-.sorting-index {
-  display: flex;
+.sorting-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .catalog-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0;
-  margin-bottom: 20px;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
-.catalog-item {
-  width: 338px;
-  height: 438px;
-  margin: 0;
-  margin-right: 20px;
-  border: 1px solid #7DB54F;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.catalog-item:last-child {
-  margin-right: 0;
-}
-
 .catalog-item-title {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 0;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 20px;
 }
 
-.catalog-item-img {
-  display: block;
-  padding: 20px;
-}
-
-.catalog-item-text {
-  margin: 0;
-  padding: 0;
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.catalog-item-description {
-  font-family: "PT Sans";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
+.catalog-item-description,
 .price-item {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  text-align: right;
-} */
+}
+
+.rating {
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.subscribe-title-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.subscribe-discription-catalog {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+}
