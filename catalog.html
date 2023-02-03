@@ -48,9 +48,9 @@
     </nav>
   </header>
 
-  <main class="main-container main-catalog">
+  <main class="main-inner main-catalog">
+    <div class="page-container">
     <section class="filter">
-      <div class="filter-content">
         <header class="filter-header">
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="filter-list">
@@ -66,7 +66,7 @@
             </li>
             <li class="filter-item">
               <a class="filter-item-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="73" height="21" fill="none"><path fill="#fff" d="M7.36 5.98H2.69V16H1.36V4.8h6v1.18ZM6.1 12c0-1.35.3-2.39.9-3.1a3.21 3.21 0 0 1 2.6-1.1c.6 0 1.12.1 1.55.31.45.2.82.48 1.1.85.3.36.5.8.65 1.33.14.51.2 1.08.2 1.71 0 1.35-.3 2.4-.9 3.12-.6.71-1.47 1.07-2.6 1.07-.6 0-1.12-.1-1.57-.29-.43-.2-.8-.48-1.09-.84-.28-.38-.5-.82-.64-1.33-.13-.52-.2-1.1-.2-1.73Zm1.32 0c0 .4.04.8.12 1.17.08.37.21.7.38.97.17.28.4.5.67.68.28.17.62.25 1.01.25 1.45.01 2.18-1.01 2.18-3.07 0-.42-.05-.81-.13-1.18-.08-.38-.2-.7-.37-.98a1.89 1.89 0 0 0-1.68-.91C8.15 8.92 7.42 9.94 7.42 12Zm13.16 3.47c-.32.24-.7.41-1.14.53a4.87 4.87 0 0 1-2.94-.1c-.43-.2-.78-.48-1.06-.84a3.88 3.88 0 0 1-.59-1.33 7.9 7.9 0 0 1-.18-1.73c0-1.35.3-2.39.9-3.1.6-.73 1.46-1.1 2.58-1.1a5.6 5.6 0 0 1 2.27.47l-.37 1.1a3.25 3.25 0 0 0-.82-.31c-.3-.09-.61-.13-.96-.13C16.76 8.93 16 9.95 16 12c0 .4.04.8.11 1.17.09.36.22.69.4.97.2.28.44.5.74.68.31.17.69.25 1.14.25a2.9 2.9 0 0 0 1.78-.58l.4.98Zm6.62-6.35h-2.52V16H23.4V9.12h-2.5V8h6.3v1.12Zm6.26 2.14.05-.99h-.05l-.66 1.03-3.6 4.7h-.73V8h1.28v4.88l-.05.94h.06l.63-.99L33.99 8h.75v8h-1.28v-4.74Zm8.64 1.2h-3.62V16H37.2V8h1.28v3.34h3.62V8h1.28v8H42.1v-3.54Zm8.73-1.2.05-.99h-.05l-.65 1.03-3.6 4.7h-.74V8h1.28v4.88l-.05.94h.07l.62-.99L51.36 8h.75v8h-1.28v-4.74Zm10.93 6.77h-.86L60.66 16h-6.08V8h1.28v6.88h3.47V8h1.28v6.88h1.15v3.15Zm2.86-3.15c.4.06.77.1 1.14.1.67 0 1.14-.13 1.4-.39.27-.26.4-.64.4-1.12 0-.42-.13-.78-.4-1.05-.25-.28-.7-.42-1.35-.42-.19 0-.38 0-.6.02-.21 0-.4.04-.59.1v2.76Zm0-3.82c.26-.05.5-.07.74-.08.23-.03.46-.04.67-.04.54 0 1 .07 1.36.2.37.11.67.28.9.5.22.2.37.46.46.76.1.29.14.6.14.93 0 .97-.27 1.67-.81 2.11-.54.44-1.4.66-2.61.66-.68 0-1.4-.04-2.13-.1V8h1.28v3.06ZM70.16 8h1.28v8h-1.28V8Z"/></svg>
+              <span>Гостиницы</span>
               </a>
             </li>
           </ul>
@@ -146,7 +146,6 @@
             </div>
           </fieldset>
         </form>
-      </div>
     </section>
     <section class="main-content">
       <div class="sorting-container">
@@ -161,14 +160,14 @@
             <a class="sorting-link" href="#"></a>
             <a class="sorting-link" href="#"></a>
           </div>
-        </div>
+      </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <img class="catalog-item-img" src="./images/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
             <h3 class="catalog-item-title">Amara Resort & Spa</h3>
             <p class="catalog-item-text">
               <span class="catalog-item-description">Гостиница</span>
-              <span class="price-item">От 4000 ₽</span>
+              <b class="price-item">От 4000 ₽</b>
             </p>
               <div class="catalog-item-link">
                 <button class="catalog-item-btn">
@@ -180,7 +179,7 @@
               </div>
               <div class="rating-container">
                 <img src="" alt="Звезды">
-                <p>Рейтинг: <span>8,5</span></p>
+                <span class="rating">Рейтинг: 8,5</span>
               </div>
           </li>
           <li class="catalog-item">
@@ -200,7 +199,7 @@
               </div>
               <div class="rating-container">
                 <img src="" alt="Звезды">
-                <p>Рейтинг: <span>9,2</span></p>
+                <span class="rating">Рейтинг: 9,2</span>
           </li>
           <li class="catalog-item">
             <img src="./images/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
@@ -221,10 +220,8 @@
                 <ul class="rating-starts-wrapper">
                   <img src="" alt="Звезды">
                 </ul>
-                <p>Рейтинг: <span>6,9</span></p>
+                <span class="rating">Рейтинг: 6,9</span>
           </li>
-        </ul>
-          <ul class="catalog-list">
           <li class="catalog-item">
             <img src="./images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
             <h3 class="catalog-item-title">GreenTree Inn</h3>
@@ -242,11 +239,10 @@
               </div>
               <div class="rating-container">
               <img src="" alt="Звезды">
-                <p>Рейтинг: <span>5,0</span></p>
+              <span class="rating">Рейтинг:5,0</span>
           </li>
         </ul>
-        <div class="pagination-container">
-          <ul class="pagination-list">
+        <ul class="pagination-list">
             <li class="pagination-item">
               <a href="#">1</a>
             </li>
@@ -265,19 +261,18 @@
             <li class="pagination-item">
               <a href="#">10</a>
             </li>
-          </ul>
-        </div>
-      </div>
+        </ul>
     </section>
+    </div>
     <section class="subscribe subscribe-index-catalog">
-      <div class="subscribe-content-catalog">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <div class="subscribe-content">
+        <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscribe-discription-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" class="appointment-form" method="post">
           <label class="field-group-catalog">
             <input class="field" type="text" placeholder="Ваш e-mail">
             <button class="form-btn" type="submit">
-              <span>Подписаться</span>
+              Подписаться
             </button>
           </label>
         </form>
@@ -293,16 +288,19 @@
           <li class="social-item">
             <a class="social-link social-item-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вк</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none"><path fill="#83B3D3" fill-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" clip-rule="evenodd"/></svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link social-item-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none"><path fill="#83B3D3" d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z"/></svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link social-item-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">YouTube</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none"><path fill="#83B3D3" d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/></svg>
             </a>
           </li>
         </ul>
