@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(./fonts/ptsans-400.woff2) format("woff2");
+  src: url("./fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,12 +10,16 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(./fonts/ptsans-700.woff2) format("woff2");
+  src: url("./fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
+:root {
+  --main-font: "PT Sans", "Arial", sans-serif;
+}
+
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: var(--main-font);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -52,14 +56,13 @@ video {
   color: #000000;
   background: #ffffff;
   margin: 0 auto;
+  width: 1200px;
 }
 
 .navigation-container {
   display: flex;
   flex-direction: row;
-  width: 1200px;
   margin: 0 auto;
-  height: 64px;
   background-color: #ffffff;
 }
 
@@ -87,7 +90,7 @@ video {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -97,8 +100,6 @@ video {
   text-align: center;
   text-decoration: none;
 }
-
-
 
 .navigation-user {
   display: flex;
@@ -114,9 +115,6 @@ video {
 
 .navigation-item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 64px;
 }
 
 /* .navigation-item::after{
@@ -157,9 +155,9 @@ video {
   margin-left: 20px;
   padding-left: 35px;
   cursor: pointer;
-  font-family: "PT Sans";
-  font-weight: 700;
+  font-family: inherit;
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
@@ -216,7 +214,6 @@ video {
   height: 10px;
   left: calc(50% -  -22px/2);
   top: calc(50% - -10px/2 - 11px);
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -227,7 +224,7 @@ video {
 .main-index {
   position: relative;
   color: #000000;
-  background-image: url(./images/index-background.jpg);
+  background-image: url("./images/index-background.jpg");
   background-color: #F2F2F2;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -238,8 +235,8 @@ video {
   content: "";
   width: 100%;
   height: 57px;
-  background-image: url(./images/divider.svg);
-  margin-top: 25px;
+  background-image: url("./images/divider.svg");
+  margin-top: 26px;
 }
 
 .main-container {
@@ -255,7 +252,6 @@ video {
 }
 
 .sedona-text {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -269,7 +265,6 @@ video {
 }
 
 .sedona-description {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -330,11 +325,8 @@ padding: 0;
   width: 230px;
 }
 
-
-
 .advantage-title {
   position: relative;
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -367,7 +359,6 @@ padding: 0;
 }
 
 .item-discription {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -375,9 +366,7 @@ padding: 0;
   margin: 0;
 }
 
-
 .advantage-service-title {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -391,7 +380,6 @@ padding: 0;
 }
 
 .advantage-service-description {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -433,7 +421,6 @@ padding: 0;
 }
 
 .service-content h3 {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -445,10 +432,7 @@ padding: 0;
   margin-bottom: 29px;
 }
 
-
-
 .service-content p {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -474,7 +458,6 @@ padding: 0;
 }
 
 .interested-title {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -486,7 +469,6 @@ padding: 0;
 }
 
 .interested-description {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -505,7 +487,7 @@ padding: 0;
   border-radius: 4px;
   border: 0;
   background: #756157;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -517,10 +499,9 @@ padding: 0;
 
 .subscribe-index {
   position: relative;
-  background-image: url(./images/index-footer.jpg);
+  background-image: url("./images/index-footer.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-
 }
 
 .subscribe{
@@ -539,7 +520,6 @@ padding: 0;
 }
 
 .subscribe-title {
-  font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -551,7 +531,6 @@ padding: 0;
 
 .subscribe-discription {
   width: 475px;
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -584,7 +563,6 @@ padding: 0;
 }
 
 .field::placeholder {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -602,7 +580,7 @@ padding: 0;
   border-radius: 0 4px 4px 0;
   border: 0;
   cursor: pointer;
-  font-family: "PT Sans";
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -653,14 +631,12 @@ padding: 0;
 }
 
 .social-link {
-  display: block;
+  display: grid;
+  place-items: center;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer-phone-link {
-  font-family: "PT Sans";
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -674,9 +650,7 @@ padding: 0;
   padding-top: 4px;
 }
 
-
 /* Catalog */
-
 .main-inner {
   padding-top: 35px;
   flex-grow: 1;
@@ -689,7 +663,7 @@ padding: 0;
 .main-catalog {
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-image: url(./images/catalog-filter-backgroud.jpg);
+  background-image: url("./images/catalog-filter-backgroud.jpg");
 }
 
 .page-container {
@@ -706,7 +680,6 @@ padding: 0;
   margin-bottom: 8px;
   padding: 0;
 }
-
 
 .filter-list {
   display: flex;
