@@ -833,6 +833,7 @@ padding: 0;
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .sorting-link-current{
@@ -873,12 +874,15 @@ padding: 0;
 }
 
 .range-item {
-  width: 143px;
-  height: 48px;
+  margin-right: 2px;
+}
+
+.range-item:last-child {
+  margin-right: 0;
 }
 
 .range-input {
-  width: 100%;
+  width: 143px;
   height: 48px;
   margin: 0;
   background: #F2F2F2;
@@ -889,6 +893,7 @@ padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  box-sizing: border-box;
 }
 
 .range-input-right{
