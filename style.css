@@ -164,8 +164,7 @@ input:focus::placeholder {
   background: #756157;
   margin: 0;
   margin-left: 20px;
-  padding-left: 35px;
-
+  padding: 8px 34px;
 }
 
 .button {
@@ -242,13 +241,15 @@ input:focus::placeholder {
   z-index: 1;
 }
 
-.main-index {
+.page-welcome {
   position: relative;
   color: #000000;
   background-image: url("./images/index-background.jpg");
   background-color: #F2F2F2;
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
 }
 
 .page-welcome::after {
@@ -257,11 +258,11 @@ input:focus::placeholder {
   width: 100%;
   height: 57px;
   background-image: url("./images/divider.svg");
-  margin-top: 26px;
+  position: absolute;
+  bottom: 0;
 }
 
 .main-container {
-  padding-top: 51px;
   flex-grow: 1;
   margin: 0 auto;
   background-color: #ffffff;
@@ -269,6 +270,7 @@ input:focus::placeholder {
 }
 
 .welcome {
+  padding-top: 51px;
   margin: 0 auto;
 }
 
@@ -296,10 +298,6 @@ input:focus::placeholder {
   margin-bottom: 90px;
 }
 
-.advantage {
-margin: 0;
-padding: 0;
-}
 
 .advantage-list {
   display: flex;
@@ -309,7 +307,6 @@ padding: 0;
   padding: 0;
   list-style-type: none;
 }
-
 
 .advantage-item {
   width: 400px;
@@ -923,7 +920,7 @@ padding: 0;
 .price-slider {
   display: flex;
   flex-direction: column;
-  width: 286px;
+  width: 288px;
 }
 
 .catalog-filter-title {
@@ -1011,12 +1008,13 @@ padding: 0;
 
 .catalog-item-link {
   display: flex;
-  margin: 0;
-  padding: 0;
+  width: 300px;
   margin-bottom: 16px;
 }
 
 .catalog-item-btn {
+  width: 140px;
+  padding: 8px 20px;
   background: #756157;
 }
 
