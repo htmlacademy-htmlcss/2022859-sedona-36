@@ -132,21 +132,6 @@ input:focus::placeholder {
   position: relative;
 }
 
-/* .navigation-item::after{
-  position: relative;
-  display: flex;
-  content: "";
-  width: 68px;
-  border-bottom: 2px solid #756257;
-  z-index: 1;
-  margin: 0 16px;
-} */
-
-
-/* .navigation-item:first-child {
-  border-bottom: 2px solid #756257;
-} */
-
 .navigation-link-user {
   position: absolute;
   padding: 24px 13px;
@@ -773,9 +758,22 @@ input:focus::placeholder {
   place-items: center;
 }
 
+.filter-item-link:hover {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-item-link:focus {
+  color: #ffffff;
+}
+
+.filter-item-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .filter-item {
   margin-right: 10px;
 }
+
 
 .filter-item:last-child {
   margin-right: 0;
@@ -816,6 +814,23 @@ input:focus::placeholder {
   color: #333333;
   margin-right: auto;
   appearance: none;
+  background-image: url("./images/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.sorting-index:hover,
+.sorting-index:focus {
+  border: 2px solid #68A2CA;
+}
+
+.sorting-index:active {
+  border: 2px solid #3F5E72;
+}
+
+.sorting-index:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .sorting-link-wrapper {
@@ -831,6 +846,18 @@ input:focus::placeholder {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.sorting-link:hover {
+  border: 2px solid #000000;
+}
+
+.sorting-link:focus {
+  border: 2px solid #68A2CA;
+}
+
+.sorting-link:active {
+  border: 2px solid #000000;
 }
 
 .sorting-link-current{
@@ -864,6 +891,7 @@ input:focus::placeholder {
   display: flex;
   width: 549px;
 }
+
 
 .range-wrapper {
   display: flex;
@@ -959,10 +987,43 @@ input:focus::placeholder {
   margin-top: 40px;
 }
 
+/* Checkbox */
+
+.catalog-filter-check {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.catalog-filter-input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: none;
+}
+
+.checkbox-icon .tick {
+  stroke-dasharray: 20px;
+  stroke-dashoffset: 20px;
+  transition: stroke-dashoffset 0.2s ease-out;
+}
+
+.catalog-filter-input:checked + .checkbox-icon .tick {
+  stroke-dashoffset: 0;
+}
+
 .catalog-filter-item {
   position: relative;
   display: block;
-  padding-left: 16px;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -974,6 +1035,7 @@ input:focus::placeholder {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  margin-left: 16px;
 }
 
 
