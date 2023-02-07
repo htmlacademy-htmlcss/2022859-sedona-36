@@ -57,12 +57,12 @@
           <ul class="filter-list">
             <li class="filter-item">
               <a class="filter-item-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="15" fill="none"><path fill="currentColor" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
               </a>
             </li>
             <li class="filter-item">
               <a class="filter-item-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="21" fill="none"><path fill="#fff" d="M6.92 9.97 2.17 5.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="21" fill="none"><path fill="currentColor" d="M6.92 9.97 2.17 5.72c-.25-.25-.75-.25-1.13 0-.37.25-.25.75 0 1l4.13 3.75-4 3.75a.76.76 0 0 0 0 1c0 .12.37.25.5.25.12 0 .37-.13.5-.25l4.75-4.25a.59.59 0 0 0 0-1Z"/></svg>
               </a>
             </li>
             <li class="filter-item">
@@ -77,20 +77,32 @@
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="catalog-filter-check">
-                  <input class="visually-hidden catalog-filter-input" type="checkbox" name="pool">
+                <label class="catalog-filter-check" for="myCheckbox">
+                  <input class="catalog-filter-input" type="checkbox" name="pool" id="myCheckbox">
+                  <svg class="checkbox-icon">
+                    <rect width="20" height="20" x=".5" y=".5" fill="#FFFFFF" stroke="#ffffff" rx="3" />
+                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="3" d="M4 10l5 5 9-9" />
+                  </svg>
                   <span class="catalog-filter-text">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="catalog-filter-check">
-                  <input class="visually-hidden catalog-filter-input" type="checkbox" name="parking">
+                <label class="catalog-filter-check"  for="myCheckbox">
+                  <input class="catalog-filter-input" type="checkbox" name="parking" id="myCheckbox">
+                  <svg class="checkbox-icon">
+                    <rect width="20" height="20" x=".5" y=".5" fill="#FFFFFF" stroke="#ffffff" rx="3" />
+                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="3" d="M4 10l5 5 9-9" />
+                  </svg>
                   <span class="catalog-filter-text">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="catalog-filter-check">
-                  <input class="visually-hidden catalog-filter-input" type="checkbox" name="wi-fi">
+                <label class="catalog-filter-check"  for="myCheckbox">
+                  <input class="catalog-filter-input" type="checkbox" name="wi-fi" id="myCheckbox">
+                  <svg class="checkbox-icon">
+                    <rect width="20" height="20" x=".5" y=".5" fill="#FFFFFF" stroke="#ffffff" rx="3" />
+                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="3" d="M4 10l5 5 9-9" />
+                  </svg>
                   <span class="catalog-filter-text">Wi-Fi</span>
                 </label>
               </li>
@@ -155,8 +167,8 @@
         <h2 class="sorting-title">Найдено гостиниц: <span >38</span></h2>
           <select class="sorting-index" name="sorting-index" id="sorting-index">
             <option value="cheap">Сначала дешевые</option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="popular">Сначала популярное</option>
+            <option value="expensive">Сначала дорогое</option>
           </select>
           <div class="sorting-link-wrapper">
             <a class="sorting-link sorting-link-current" href="#">
