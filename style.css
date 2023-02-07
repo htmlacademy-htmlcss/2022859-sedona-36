@@ -45,14 +45,11 @@ video {
   object-position: center;
 }
 
-
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -95,7 +92,7 @@ video {
 .navigation-list{
   display: flex;
   flex-direction: row;
-  width: 339px;
+  width: 370px;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
@@ -143,18 +140,8 @@ video {
   height: 18px;
 }
 
-.navigation-btn {
-  width: 160px;
-  height: 36px;
-  background: #756157;
-  margin: 0;
-  margin-left: 20px;
-  padding: 8px 34px;
-}
-
 .button {
   display: inline-block;
-  padding: 8px 26px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -165,6 +152,15 @@ video {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.navigation-btn {
+  width: 160px;
+  height: 36px;
+  background: #756157;
+  margin: 0;
+  margin-left: 20px;
+  padding: 8px 34px;
 }
 
 .navigation-btn:hover,
@@ -189,11 +185,6 @@ video {
 .btn-interested:disabled {
   background: #E5E5E5;
 }
-
-/* .navigation-btn-title {
-
-  margin: 0;
-} */
 
 .navigation-item-user{
   position: relative;
@@ -282,7 +273,6 @@ video {
   margin: 0 auto;
   margin-bottom: 90px;
 }
-
 
 .advantage-list {
   display: flex;
@@ -413,7 +403,6 @@ video {
   background-color: #FFFFFF;
 }
 
-
 .service-content {
   display: flex;
   flex-direction: column;
@@ -441,7 +430,6 @@ video {
   background-position: top;
   background-repeat: no-repeat;
 }
-
 
 .service-content h3 {
   font-weight: 700;
@@ -588,6 +576,7 @@ video {
   padding: 12px 20px;
   margin: 0;
   flex-grow: 1;
+  outline: 0;
 }
 
 .field:focus::placeholder {
@@ -622,7 +611,6 @@ video {
 .page-footer {
   display: flex;
   width: 1200px;
-  height: 120px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -655,7 +643,6 @@ video {
   cursor: pointer;
 }
 
-
 .social-link {
   display: grid;
   place-items: center;
@@ -667,6 +654,7 @@ video {
 .social-link:focus  {
   color: #68A2CA;
 }
+
 .social-link:active {
   color: rgba(104, 162, 202, 0.3);
 }
@@ -903,7 +891,6 @@ video {
   width: 549px;
 }
 
-
 .range-wrapper {
   display: flex;
   flex-direction: row;
@@ -948,6 +935,32 @@ video {
   background: #82B3D3;
   border-radius: 4px;
   margin-bottom: 32px;
+}
+
+.btn-range:hover,
+.btn-range:focus {
+  background: #68A2CA;
+}
+
+.btn-range:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.btn-range:disabled {
+  background: #E5E5E5;
+}
+
+.btn-range-reset:hover {
+  opacity: 0.6;
+}
+
+.btn-range-reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.btn-range-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-range:last-child {
@@ -998,7 +1011,6 @@ video {
 }
 
 /* Checkbox */
-
 .catalog-filter-check {
   display: flex;
   align-items: center;
@@ -1048,12 +1060,17 @@ video {
   margin-left: 16px;
 }
 
-
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   margin: 0;
   padding: 20px;
+}
+
+.catalog-item-img {
+  order: -1;
 }
 
 .catalog-item-text {
@@ -1091,12 +1108,46 @@ video {
   background: #756157;
 }
 
-.catalog-item-btn:nth-child(2) {
+.catalog-item-btn:hover,
+.catalog-item-btn:focus {
+  background: #615048;
+}
+
+.catalog-item-btn:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-item-btn:disabled {
+  background: #E5E5E5;
+}
+
+.catalog-item-btn-blue {
   background: #82B3D3;
 }
 
-.btn-green-catalog:nth-child(2) {
-  background: #7DB54F
+.catalog-item-btn-blue:hover,
+.catalog-item-btn-blue:focus {
+  background: #68A2CA;
+}
+
+.catalog-item-btn-blue:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-item-btn-green {
+  background: #7DB54F;
+}
+
+.catalog-item-btn-green:hover,
+.catalog-item-btn-green:focus {
+  background: #6C9E42;
+}
+
+.catalog-item-btn-green:active {
+  background: #7DB54F;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .catalog-item-description,
@@ -1152,6 +1203,17 @@ video {
   text-decoration: none;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+  background: #68A2CA;
+  border: 1px solid #82B3D3;
+}
+
+.pagination-link:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-points {
   background: none;
   color: #000000;
@@ -1160,6 +1222,14 @@ video {
 .pagination-current {
   background: #F2F2F2;
   color: #000000;
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  background: #F2F2F2;
+  color: #000000;
+  border: none;
 }
 
 .subscribe-index-catalog {
