@@ -1038,7 +1038,7 @@ video {
 .range-scale {
   position: relative;
   border-radius: 2px;
-  background-color: #E6E6E6;
+  background-color: #757575;
   height: 4px;
 }
 
@@ -1246,6 +1246,7 @@ video {
 
 .catalog-item-btn-green {
   background: #7DB54F;
+  padding: 8px 18px;
 }
 
 .catalog-item-btn-green:hover,
