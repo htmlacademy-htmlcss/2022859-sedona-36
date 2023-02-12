@@ -92,7 +92,7 @@ video {
 .navigation-list{
   display: flex;
   flex-direction: row;
-  width: 370px;
+  width: 450px;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
@@ -902,7 +902,6 @@ video {
   border: none;
   color: #FFFFFF;
   margin-right: 70px;
-  width: 150px;
 }
 
 .catalog-filter-group:nth-child(2) {
@@ -918,6 +917,7 @@ video {
 .range-wrapper {
   display: flex;
   flex-direction: row;
+  margin-bottom: 36px;
 }
 
 .range-item {
@@ -953,6 +953,13 @@ video {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .range-input:hover {
@@ -1023,14 +1030,48 @@ video {
 }
 
 .price-slider {
-  display: flex;
-  flex-direction: column;
-  width: 288px;
   border: none;
   margin: 0;
   padding: 0;
 }
 
+.range-scale {
+  position: relative;
+  border-radius: 2px;
+  background-color: #E6E6E6;
+  height: 4px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.toggle-min {
+  top: -10px;
+  left: 0;
+}
+.toggle-max {
+  top: -10px;
+  right: -10px;
+}
+
+/* catalog-main */
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -1081,27 +1122,6 @@ video {
   opacity: 0;
   cursor: pointer;
 }
-
-input[type="number"] {
-	-moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-	display: none;
-}
-
-/* input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-  margin: 0;
-} Для Chrome*/
-
-/* .catalog-filter-input[type="radio"] {
-
-} */
 
 .checkbox-icon {
   width: 20px;
