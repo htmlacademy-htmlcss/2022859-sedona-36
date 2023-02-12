@@ -33,9 +33,9 @@
           </a>
           </li>
           <li class="navigation-item-user">
-          <a class="navigation-link-user favourites" href="/#">
+          <a class="navigation-link-user favourites" href="/#" data-count="12">
             <span class="visually-hidden">Избранное</span>
-            <span class="count">12</span>
+            <!-- <span class="count">12</span> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none"><path fill="#000" d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
           </a>
         </li>
@@ -47,7 +47,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="main-inner main-catalog">
     <div class="page-container">
     <section class="filter">
@@ -128,14 +127,14 @@
             <fieldset class="price-slider">
             <legend class="catalog-filter-title">Стоимость,<span>₽</span>:</legend>
             <div class="range-wrapper">
-              <div class="range-item">
-              <label  for="start-price" class="">от</label>
-              <input class="range-input" type="number" value="0" id="start-price" placeholder="От">
-              </div>
-              <div class="range-item">
-              <label for="final-price">до</label>
-                <input class="range-input range-input-right" type="number" value="9000" id="final-price" placeholder="до">
-            </div>
+              <label class="range-item">
+              <span>от</span>
+              <input class="range-input" type="number" value="0" placeholder="От">
+              </label>
+              <label class="range-item">
+              <span>до</span>
+              <input class="range-input range-input-right" type="number" value="9000" placeholder="до">
+            </label>
             </div>
             <div class="range-slider">
               <button class="range-slider-btn" type="button">
