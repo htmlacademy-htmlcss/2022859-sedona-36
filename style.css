@@ -1082,9 +1082,26 @@ video {
   cursor: pointer;
 }
 
-.catalog-filter-input[type="radio"] {
-
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
 }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+/* input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+  margin: 0;
+} Для Chrome*/
+
+/* .catalog-filter-input[type="radio"] {
+
+} */
 
 .checkbox-icon {
   width: 20px;
