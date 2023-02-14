@@ -178,5 +178,75 @@
           </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="auth-text">Дата заезда:</label>
+              <input class="auth-from-field field" type="text" id="check-in" value="27 апреля 2020">
+              <span class="auth-descr">Мы не можем отправить вас в прошлое.</span>
+          </p>
+          <p class="field-group">
+            <label class="auth-text auth-exit" for="">Дата выезда:</label>
+              <input class="auth-from-field field" type="text" value="1 сентября 2023">
+              <span class="auth-descr auth-description">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <div class="field-group-wrapper">
+          <p class="field-group">
+            <legend class="auth-text auth-title">Взрослые:</legend>
+            <label class="auth-wrapper" id="man"  for="">
+              <button class="minus-btn">
+                <span class="visually-hidden">-</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+              <input class="field field-small" value="2" type="number">
+              <button class="plus-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+              </button>
+            </label>
+          </p>
+          <p class="field-group filed-group-kids">
+            <span class="tooltip">
+              <button class="tooltip-toggle" aria-labelledby="tooltip-date">
+                <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+            <legend class="auth-text auth-tooltip">Дети:</legend>
+
+
+            <label class="auth-wrapper" for="">
+              <button class="minus-btn">
+                <span class="visually-hidden">-</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+              </button>
+              <input class="field field-small" type="number" value="2">
+              <button class="plus-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="#756157" fill-opacity=".3" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
+              </button>
+            </label>
+
+          </p>
+        </div>
+        <button class="auth-btn">
+          Найти
+        </button>
+        </form>
+      </section>
+      </div>
+    </div>
   </body>
 </html>
