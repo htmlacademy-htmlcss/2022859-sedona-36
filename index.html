@@ -7,13 +7,14 @@
     <title>Седона</title>
   </head>
   <body>
+    <!-- шапка сайт -->
     <header class="page-header">
       <nav class="navigation-container">
         <a class="logo-link-header">
         <img class="logo" src="./images/logo.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-link-line">
             <a class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
@@ -31,11 +32,11 @@
             </a>
             </li>
             <li class="navigation-item-user">
-            <a class="navigation-link-user favourites" href="/#">
+            <a class="navigation-link-user favourites" href="/#" data-count="12">
               <span class="visually-hidden">Избранное</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none"><path fill="#000" d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
               </svg>
-              <span class="count">12</span>
+              <!-- <span class="count">12</span> -->
             </a>
           </li>
           <li>
@@ -46,12 +47,14 @@
         </ul>
       </nav>
     </header>
-
+    <!-- основная часть  -->
     <main class="main-container main-index">
+      <!-- загаловок -->
       <section class="page-welcome">
         <h1 class="visually-hidden">Седона</h1>
         <img class="welcome" src="./images/welcome.svg" width="458" height="352" alt="Welcome, Sedona">
       </section>
+      <!-- Преимущество -->
       <section class="advantage">
         <h2 class="visually-hidden">Преимущество</h2>
         <p class="sedona-text">Седона — небольшой городок в Аризоне,
@@ -60,24 +63,24 @@
       <ul class="advantage-list">
         <li class="advantage-item">
             <h3 class="advantage-title">Настоящий городок</h3>
-            <p class="item-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
         <li class="advantage-img-item">
           <img class="advantage-img" src="./images/photo-1.jpg" width="800" height="384" alt="Настоящий городок">
         </li>
         <li class="advantage-item advantage-item-tourist">
             <h3 class="advantage-title advantage-title-item">Небольшая площадь</h3>
-            <p class="item-discription">Все достопримечательности находятся очень близко</p>
+            <p class="item-description">Все достопримечательности находятся очень близко</p>
         </li>
         <li class="advantage-item advantage-item-road">
             <h3 class="advantage-title advantage-title-item">Красивая
               дорога</h3>
-            <p class="item-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="advantage-item advantage-item-tourist">
             <h3 class="advantage-title advantage-title-item">Мало
               туристов</h3>
-            <p class="item-discription">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="item-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="advantage-img-item">
         <img class="advantage-img" src="./images/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
@@ -85,11 +88,10 @@
         <li class="advantage-item">
             <h3 class="advantage-title">Там есть<br>
               мост дьявола</h3>
-            <p class="item-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
       </ul>
       </section>
-
       <section class="advantage-service">
         <p class="advantage-service-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="advantage-service-description">Опытный персонал и качественное обслуживание!</p>
@@ -117,6 +119,7 @@
           </li>
         </ul>
       </section>
+      <!-- Заинтересовались -->
       <section class="interested">
         <div class="interested-content">
           <h2 class="interested-title">Заинтересовались?</h2>
@@ -126,24 +129,25 @@
           </button>
         </div>
       </section>
+    </main>
+    <!-- подвал сайта -->
+    <footer class="page-footer">
+      <!-- подписать на рассылку -->
       <section class="subscribe subscribe-index">
         <h2 class="visually-hidden">Подпишитесь на рассылк</h2>
         <div class="subscribe-content">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" class="appointment-form" method="post">
             <label class="field-group">
               <input class="field" type="email" name="email" placeholder="Ваш e-mail" required>
-              <button type="submit" class="button-big form-btn">
-                Подписаться
-              </button>
             </label>
+            <button type="submit" class="button-big form-btn">
+              Подписаться
+            </button>
           </form>
         </div>
       </section>
-    </main>
-
-    <footer class="page-footer">
       <div class="page-footer-content">
         <section class="social-footer">
           <h2 class="visually-hidden">Социальные сети</h2>

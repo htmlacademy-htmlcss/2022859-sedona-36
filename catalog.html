@@ -9,6 +9,7 @@
   <title>Каталог</title>
 </head>
 <body>
+  <!-- шапка сайта -->
   <header class="page-header">
     <nav class="navigation-container">
       <a class="logo-link-header" href="./index.html">
@@ -21,7 +22,7 @@
         <li class="navigation-item">
           <a class="navigation-link">О Седоне</a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-item navigation-link-line-catalog">
           <a class="navigation-link">Гостиницы</a>
         </li>
       </ul>
@@ -33,24 +34,27 @@
           </a>
           </li>
           <li class="navigation-item-user">
-          <a class="navigation-link-user favourites" href="/#">
+          <a class="navigation-link-user favourites" href="/#" data-count="12">
             <span class="visually-hidden">Избранное</span>
-            <span class="count">12</span>
+            <!-- <span class="count">12</span> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none"><path fill="#000" d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
           </a>
         </li>
         <li>
           <button class="button navigation-btn" type="button">
-            Хочу сюда
+            Хочу сюда!
           </button>
         </li>
       </ul>
     </nav>
   </header>
-
+  <!-- основная часть -->
   <main class="main-inner main-catalog">
+    <!-- контейнер для страницы -->
     <div class="page-container">
+      <!-- фильтрация -->
     <section class="filter">
+      <!-- заголовок для каталога  -->
         <header class="filter-header">
           <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="filter-list">
@@ -66,6 +70,7 @@
             </li>
           </ul>
         </header>
+        <!-- фильтрация формы  -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -75,7 +80,7 @@
                   <input class="catalog-filter-input" type="checkbox" name="pool" id="myCheckbox">
                   <svg class="checkbox-icon">
                     <rect width="20" height="20" x=".5" y=".5" fill="#FFFFFF" stroke="#ffffff" rx="3" />
-                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="3" d="M4 10l5 5 9-9" />
+                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="2" d="M4 10l5 5 9-9" />
                   </svg>
                   <span class="catalog-filter-text">Бассейн</span>
                 </label>
@@ -85,7 +90,7 @@
                   <input class="catalog-filter-input" type="checkbox" name="parking" id="myCheckbox-parking">
                   <svg class="checkbox-icon">
                     <rect width="20" height="20" x=".5" y=".5" fill="#FFFFFF" stroke="#ffffff" rx="3" />
-                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="3" d="M4 10l5 5 9-9" />
+                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="2" d="M4 10l5 5 9-9" />
                   </svg>
                   <span class="catalog-filter-text">Парковка</span>
                 </label>
@@ -95,7 +100,7 @@
                   <input class="catalog-filter-input" type="checkbox" name="wi-fi" id="myCheckbox-wifi">
                   <svg class="checkbox-icon">
                     <rect width="20" height="20" x=".5" y=".5" fill="#FFFFFF" stroke="#ffffff" rx="3" />
-                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="3" d="M4 10l5 5 9-9" />
+                    <path class="tick" stroke="#3F5E72" fill="none" stroke-linecap="round" stroke-width="2" d="M4 10l5 5 9-9" />
                   </svg>
                   <span class="catalog-filter-text">Wi-Fi</span>
                 </label>
@@ -106,45 +111,53 @@
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="catalog-filter-radio" for="myRadibox">
-                  <input class="catalog-filter-input" type="radio" name="housing-type" value="hotel" id="myRadibox">
+                <label class="catalog-filter-radio">
+                  <input class="visually-hidden catalog-filter-input-radio" type="radio" name="housing-type" value="hotel" checked>
+                  <span class="control-mark"></span>
                   <span class="catalog-filter-text">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="catalog-filter-radio">
-                  <input class="catalog-filter-input" type="radio" name="housing-type" value="motel">
+                  <input class="visually-hidden catalog-filter-input-radio" type="radio" name="housing-type" value="motel">
+                  <span class="control-mark"></span>
                   <span class="catalog-filter-text">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="catalog-filter-radio">
-                  <input class="catalog-filter-input" type="radio" name="housing-type" value="apartments">
+                  <input class="visually-hidden catalog-filter-input-radio" type="radio" name="housing-type" value="apartments">
+                  <span class="control-mark"></span>
                   <span class="catalog-filter-text">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-            <section class="price-slider">
-            <legend class="catalog-filter-title">Стоимость,<span>₽</span>:</legend>
+          <fieldset class="price-slider">
+            <legend class="catalog-filter-title">Стоимость, <span>₽:</span></legend>
+            <div class="range">
             <div class="range-wrapper">
               <label class="range-item">
-                <input class="range-input" type="number" value="0" placeholder="от">
+              <span>от</span>
+              <input class="range-input" type="number" value="0" placeholder="0" name="min-price">
               </label>
-              <label class="range-item">
-                <input class="range-input range-input-right" type="number" value="9000" placeholder="до">
-              </label>
+              <label class="range-item range-item-text">
+              <span>до</span>
+              <input class="range-input range-input-right" type="number" value="9000" placeholder="9000" name="max-price">
+            </label>
             </div>
-            <div class="range-slider">
-              <button class="range-slider-btn" type="button">
+            <div class="range-scale">
+              <div class="range-bar" style= "left: 0; width: 226px">
+              <button class="range-toggle toggle-min" type="button">
                 <span class="visually-hidden">Минимальная</span>
               </button>
-              <button class="range-slider-btn" type="button">
+              <button class="range-toggle toggle-max" type="button">
                 <span class="visually-hidden">Максимальная</span>
               </button>
+              </div>
             </div>
-          </section>
+            </div>
+          </fieldset>
             <div class="range-wrapper-btn-catalog">
               <button class="button btn-range" type="submit">
                 Применить
@@ -153,10 +166,10 @@
                 Сбросить
               </button>
             </div>
-          </fieldset>
         </form>
     </section>
     <section class="main-content">
+      <!-- сортировка -->
       <div class="sorting-container">
         <h2 class="sorting-title">Найдено гостиниц: <span >38</span></h2>
           <select class="sorting-index" name="sorting-index" id="sorting-index">
@@ -176,6 +189,7 @@
             </a>
           </div>
       </div>
+      <!-- карточки каталога -->
       <div class="catalog-list-wrapper">
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -210,7 +224,7 @@
                   подробнее
                 </button>
                 <button class="button catalog-item-btn catalog-item-btn-green">
-                  в избранное
+                  в избранном
                 </button>
               </div>
               <div class="rating-container">
@@ -255,10 +269,12 @@
               </div>
               <div class="rating-container">
               <img src="./images/star2.svg" alt="Звезды">
-              <span class="rating">Рейтинг:5,0</span>
+              <span class="rating">Рейтинг: 5,0</span>
+              </div>
           </li>
         </ul>
       </div>
+      <!-- пагинация -->
         <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link pagination-current" href="#">1</a>
@@ -291,23 +307,25 @@
         </ul>
     </section>
     </div>
+  </main>
+  <!-- подвал сайта -->
+  <footer class="page-footer">
+    <!-- подписка -->
     <section class="subscribe subscribe-index-catalog">
       <div class="subscribe-content">
         <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
-        <p class="subscribe-discription-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" class="appointment-form" method="post">
           <label class="field-group">
             <input class="field" type="text" placeholder="Ваш e-mail">
-            <button class="button-big form-btn" type="submit">
-              Подписаться
-            </button>
+
           </label>
+          <button class="button-big form-btn" type="submit">
+            Подписаться
+          </button>
         </form>
       </div>
     </section>
-  </main>
-
-  <footer class="page-footer">
     <div class="page-footer-content">
       <section class="social-footer">
         <h2 class="visually-hidden">Социальные сети</h2>
