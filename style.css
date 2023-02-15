@@ -1701,27 +1701,3 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-
- /* input::-webkit-datetime-edit-year-field:not([aria-valuenow]),
-input::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-input::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
-} */
-/*
- input[type=date]::-webkit-datetime-edit-text {
-  -webkit-appearance: none;
-  display: none;
-
-}
-input[type=date]::-webkit-datetime-edit-month-field{
-  -webkit-appearance: none;
-
-}
-input[type=date]::-webkit-datetime-edit-day-field {
-  -webkit-appearance: none;
-  display: none;
-}
-input[type=date]::-webkit-datetime-edit-year-field {
-  -webkit-appearance: none;
-  display: none;
-}  */
