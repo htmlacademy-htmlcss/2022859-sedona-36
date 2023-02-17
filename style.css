@@ -1029,7 +1029,7 @@ video {
 }
 
 .btn-range-reset:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .btn-range-reset:active {
@@ -1450,6 +1450,7 @@ video {
   background-color: #FFFFFF;
   padding: 64px 70px;
   border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-auth {
@@ -1477,8 +1478,7 @@ video {
 }
 
 .modal-close-button:focus {
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
 .modal-close-button:active {
@@ -1548,6 +1548,52 @@ video {
   cursor: pointer;
 }
 
+.auth-form .field:hover {
+  background-color: #E6E6E6;
+  opacity: 0.6;
+}
+
+.auth-form .field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.auth-form .field:active {
+  background: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
+.placeholder-form {
+  position: absolute;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+}
+
+.auth-from-field::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+.auth-from-field::-webkit-datetime-edit-month-field{
+  -webkit-appearance: none;
+  display: none;
+}
+.auth-from-field::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+.auth-from-field::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.auth-from-field::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+.auth-from-field::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+.auth-from-field::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
 .auth-form .field-small {
   width: 110px;
   text-align: center;
@@ -1555,6 +1601,7 @@ video {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  height: 48px;
 }
 
 .field-small::-webkit-outer-spin-button,
@@ -1614,15 +1661,41 @@ video {
   color: #FFFFFF;
 }
 
+.auth-btn:hover,
+.auth-btn:focus {
+  background: #68A2CA;
+  outline: none;
+}
+
+.auth-btn:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .auth-wrapper {
   position: relative;
 }
 /* button plus/minus */
 .minus-btn {
   position: absolute;
-  height: 100%;
   border: none;
   background-color: inherit;
+  padding: 13px 9px;
+
+}
+
+.minus-icon {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.minus-icon:hover {
+  color: #000000;
+}
+
+.minus-icon:focus {
+  border-color: 3px solid #82B3D3;
+  border-radius: 4px;
+  /* outline: none; */
 }
 
 .plus-btn {
@@ -1631,6 +1704,7 @@ video {
   height: 100%;
   border: none;
   background-color: inherit;
+  padding: 13px 9px;
 }
 
 /* tooltip */
