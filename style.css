@@ -1710,7 +1710,7 @@ video {
 /* tooltip */
 .tooltip {
   position: absolute;
-  margin-top: 8px;
+  margin-top: 10px;
   margin-left: 59px;
   width: 26px;
   height: 26px;
