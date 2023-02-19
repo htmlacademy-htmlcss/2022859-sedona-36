@@ -1199,8 +1199,8 @@ video {
 /* .catalog-filter-radio:hover {
   opacity: 0.6;
 } */
-.catalog-filter-radio:focus  .control-mark{
-  border: 2px solid #83B3D3;
+.control-mark:focus{
+  outline: 2px solid #83B3D3;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
   border-radius: 18px;
 }
@@ -1681,21 +1681,28 @@ video {
   border: none;
   background-color: inherit;
   padding: 13px 9px;
-
 }
 
 .minus-icon {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.minus-icon:hover {
+.minus-icon:hover,
+.plus-btn:hover {
   color: #000000;
 }
 
-.minus-icon:focus {
-  border-color: 3px solid #82B3D3;
+.minus-icon:focus,
+.plus-btn:focus {
+  outline: 3px solid #82B3D3;
   border-radius: 4px;
-  /* outline: none; */
+  color: #000000;
+}
+
+.minus-btn:active,
+.plus-btn:active {
+  color: #000000;
+  opacity: 0.2;
 }
 
 .plus-btn {
