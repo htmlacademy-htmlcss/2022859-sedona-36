@@ -737,8 +737,12 @@ video {
 }
 
 .logo-htmlacademy {
+  display: flex;
   color:#000000;
-  padding-top: 4px;
+}
+
+.logo-htmlacademy-icon {
+  display: block;
 }
 
 .logo-htmlacademy:hover,
@@ -1207,7 +1211,7 @@ video {
   opacity: 0.6;
 }
 
-.catalog-filter-check:focus svg{
+.catalog-filter-input:focus + svg{
   outline: 3px solid #83B3D3;
 }
 
@@ -1257,7 +1261,7 @@ video {
   opacity: 0.6;
 }
 
-.catalog-filter-radio:focus .control-mark {
+.catalog-filter-input-radio:focus + span {
   outline: 3px solid #83B3D3;
 }
 
@@ -1299,6 +1303,7 @@ video {
 
 .catalog-item-text {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 16px;
@@ -1384,10 +1389,6 @@ video {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-}
-
-.price-item {
-  margin-left: auto;
 }
 
 .rating-container {
