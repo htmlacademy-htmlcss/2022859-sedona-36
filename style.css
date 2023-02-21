@@ -258,7 +258,6 @@ video {
   height: 20px;
   background: #7DB54F;
   border-radius: 10px;
-  z-index: 1;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -363,7 +362,6 @@ video {
   align-items: center;
   margin: 0 auto;
   margin-top: 102px;
-  /* Узнать насчет 3 4 5 элемента и их текста  */
   width: 230px;
 }
 
@@ -815,7 +813,6 @@ video {
   line-height: 21px;
 }
 
-
 .filter-item-link:hover {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1223,9 +1220,7 @@ video {
   opacity: 0.3;
 }
 
-
 /* radiobox */
-
 .catalog-filter-radio {
   position: relative;
   display: block;
@@ -1268,7 +1263,6 @@ video {
 .catalog-filter-radio:active span {
   opacity: 0.3;
 }
-
 
 .catalog-filter-item {
   position: relative;
@@ -1576,10 +1570,6 @@ video {
   color: #000000;
 }
 
-.auth-label {
-  position: absolute;
-}
-
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -1599,6 +1589,18 @@ video {
   line-height: 24px;
 }
 
+.auth-label {
+  display: flex;
+}
+
+.placeholder-form {
+  position: absolute;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 20px;
+}
+
 .auth-from-field[type="date"]::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
@@ -1613,25 +1615,24 @@ video {
 
 .auth-form .field:hover {
   background-color: #E6E6E6;
+}
+
+.auth-form .field:hover + span {
   opacity: 0.6;
 }
 
 .auth-form .field:focus {
   background-color: #E6E6E6;
-  outline: none;
+  outline: 3px solid #83B3D3;
+}
+
+.auth-form .field:focus + span {
+  opacity: 0.6;
 }
 
 .auth-form .field:active {
   background: #F2F2F2;
-  outline: none;
-}
-
-.placeholder-form {
-  position: absolute;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 12px 20px;
+  outline:  2px solid #000000;
 }
 
 .auth-from-field::-webkit-datetime-edit-text {
@@ -1654,17 +1655,25 @@ video {
 .auth-from-field::-webkit-datetime-edit-year-field:not([aria-valuenow]),
 .auth-from-field::-webkit-datetime-edit-month-field:not([aria-valuenow]),
 .auth-from-field::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
+  color: transparent;
 }
 
 .auth-form .field-small {
   width: 110px;
   text-align: center;
   color: #000000;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+}
+
+.auth-form .field-small:focus {
+  outline: none;
 }
 
 .field-small::-webkit-outer-spin-button,
@@ -1738,6 +1747,7 @@ video {
 .auth-wrapper {
   position: relative;
 }
+
 /* button plus/minus */
 .minus-btn {
   position: absolute;
