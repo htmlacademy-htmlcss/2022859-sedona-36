@@ -102,7 +102,7 @@ video {
   opacity: 0.8;
 }
 
-.logo-link-header:focus {
+.logo-link-header:focus-visible {
   outline: 3px solid #68A2CA;
 }
 
@@ -139,8 +139,8 @@ video {
   opacity: 0.8;
 }
 
-.navigation-link:focus,
-.navigation-link-user:focus {
+.navigation-link:focus-visible,
+.navigation-link-user:focus-visible {
   opacity: 0.6;
   outline: 3px solid #68A2CA;
 }
@@ -220,13 +220,13 @@ video {
 }
 
 .navigation-btn:hover,
-.navigation-btn:focus {
+.navigation-btn:focus-visible {
   background: #615048;
   outline: none;
 }
 
 .btn-interested:hover,
-.btn-interested:focus {
+.btn-interested:focus-visible {
   background: #615048;
   outline: none;
 }
@@ -646,7 +646,7 @@ video {
 }
 
 .form-btn:hover,
-.form-btn:focus {
+.form-btn:focus-visible {
   background: #68A2CA;
   outline: none;
 }
@@ -705,7 +705,7 @@ video {
 }
 
 .social-link:hover,
-.social-link:focus  {
+.social-link:focus-visible  {
   color: #68A2CA;
   outline: none;
 }
@@ -725,7 +725,7 @@ video {
 }
 
 .footer-phone-link:hover,
-.footer-phone-link:focus {
+.footer-phone-link:focus-visible {
   color: #756157;
   outline: none ;
 }
@@ -744,7 +744,7 @@ video {
 }
 
 .logo-htmlacademy:hover,
-.logo-htmlacademy:focus {
+.logo-htmlacademy:focus-visible {
   color: #756157;
   outline: none;
 }
@@ -882,9 +882,12 @@ video {
   cursor: pointer;
 }
 
-.sorting-index:hover,
-.sorting-index:focus {
+.sorting-index:hover {
   border: 2px solid #68A2CA;
+}
+.sorting-index:focus-visible {
+  border: 2px solid #68A2CA;
+  outline: none;
 }
 
 .sorting-index:active {
@@ -915,7 +918,7 @@ video {
   border: 2px solid #000000;
 }
 
-.sorting-link:focus {
+.sorting-link:focus-visible {
   border: 2px solid #68A2CA;
   outline: none;
 }
@@ -1010,10 +1013,9 @@ video {
   background: #E6E6E6
 }
 
-.range-input:focus {
+.range-input:focus{
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
 }
 
 .range-input:active {
@@ -1042,7 +1044,7 @@ video {
 }
 
 .btn-range:hover,
-.btn-range:focus {
+.btn-range:focus-visible {
   background: #68A2CA;
   outline: none;
 }
@@ -1061,7 +1063,7 @@ video {
   opacity: 0.6;
 }
 
-.btn-range-reset:focus {
+.btn-range-reset:focus-visible {
   outline: 3px solid #83B3D3;
 }
 
@@ -1208,7 +1210,7 @@ video {
   opacity: 0.6;
 }
 
-.catalog-filter-input:focus + svg{
+.catalog-filter-input:focus-visible + svg{
   outline: 3px solid #83B3D3;
 }
 
@@ -1256,7 +1258,7 @@ video {
   opacity: 0.6;
 }
 
-.catalog-filter-input-radio:focus + span {
+.catalog-filter-input-radio:focus-visible + span {
   outline: 3px solid #83B3D3;
 }
 
@@ -1330,7 +1332,7 @@ video {
 }
 
 .catalog-item-btn:hover,
-.catalog-item-btn:focus {
+.catalog-item-btn:focus-visible {
   background: #615048;
   outline: none;
 }
@@ -1351,7 +1353,7 @@ video {
 }
 
 .catalog-item-btn-blue:hover,
-.catalog-item-btn-blue:focus {
+.catalog-item-btn-blue:focus-visible {
   background: #68A2CA;
   outline: none;
 }
@@ -1367,7 +1369,7 @@ video {
 }
 
 .catalog-item-btn-green:hover,
-.catalog-item-btn-green:focus {
+.catalog-item-btn-green:focus-visible {
   background: #6C9E42;
   outline: none;
 }
@@ -1429,7 +1431,7 @@ video {
 }
 
 .pagination-link:hover,
-.pagination-link:focus {
+.pagination-link:focus-visible {
   background: #68A2CA;
   border: 1px solid #82B3D3;
   outline: none;
@@ -1451,7 +1453,7 @@ video {
 }
 
 .pagination-current:hover,
-.pagination-current:focus,
+.pagination-current:focus-visible,
 .pagination-current:active {
   background: #F2F2F2;
   color: #000000;
@@ -1534,7 +1536,7 @@ video {
   background-color: #E6E6E6;
 }
 
-.modal-close-button:focus {
+.modal-close-button:focus-visible {
   outline: 3px solid #83B3D3;
 }
 
@@ -1734,7 +1736,7 @@ video {
 }
 
 .auth-btn:hover,
-.auth-btn:focus {
+.auth-btn:focus-visible {
   background: #68A2CA;
   outline: none;
 }
@@ -1767,7 +1769,8 @@ video {
   color:  rgba(117, 97, 87, 0.3);;
 }
 
-.minus-btn:hover {
+.minus-btn:hover,
+.plus-btn:hover {
   color: #000000;
 }
 
@@ -1776,8 +1779,8 @@ video {
   outline: none;
 }
 
-.minus-btn:focus svg,
-.plus-btn:focus svg {
+.minus-btn:focus-visible svg,
+.plus-btn:focus-visible svg {
   outline: 3px solid #82B3D3;
   border-radius: 4px;
   color: #000000;
@@ -1841,7 +1844,7 @@ video {
 }
 
 .tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:focus-visible + .tooltip-text {
   opacity: 1;
   pointer-events: all;
 }
