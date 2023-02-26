@@ -680,7 +680,7 @@ video {
 
 .social-footer {
   display: flex;
-  width: 150px;
+  width: 144px;
   min-height: 50px;
 }
 
@@ -916,6 +916,7 @@ video {
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  margin-right: 8px;
 }
 
 .sorting-link:hover {
@@ -935,8 +936,8 @@ video {
   border: 2px solid #000000;
 }
 
-.sorting-link:not(:last-child) {
-  margin-right: 8px;
+.sorting-link:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-filter {
