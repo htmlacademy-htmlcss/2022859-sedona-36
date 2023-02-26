@@ -335,7 +335,7 @@ video {
 
 .advantage-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   background: #82B3D3;
   color: #ffffff;
 }
@@ -348,11 +348,6 @@ video {
 .advantage-item-road {
   background: rgba(131, 179, 211, 0.2);
   color: #000000;
-}
-
-.advantage-item:nth-child(1),
-.advantage-img-item:nth-child(1) {
-  height: 384px;
 }
 
 .texts-item {
@@ -445,6 +440,7 @@ video {
 }
 
 .advantage-service-item {
+  padding: 81px 85px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -458,8 +454,7 @@ video {
   justify-content: flex-end;
   align-items: center;
   width: 230px;
-  height: 223px;
-  margin: 81px 85px;
+  min-height: 223px;
 }
 
 .housing {
@@ -576,7 +571,6 @@ video {
   flex-direction: column;
   align-items: center;
   width: 684px;
-  height: 215px;
 }
 
 .subscribe-title {
@@ -602,7 +596,7 @@ video {
 
 .appointment-form {
   display: flex;
-  height: 52px;
+  min-height: 52px;
   width: 100%;
   margin: 0;
 }
@@ -679,14 +673,15 @@ video {
 
 .social-footer {
   display: flex;
-  width: 142px;
-  height: 50px;
+  width: 150px;
+  min-height: 50px;
 }
 
 .footer-social-list {
   display: flex;
   align-items: center;
   list-style-type: none;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -697,7 +692,6 @@ video {
 }
 
 .social-link {
-
   display: grid;
   place-items: center;
   height: 40px;
@@ -775,7 +769,7 @@ video {
 }
 
 .filter {
-  height: 309px;
+  min-height: 309px;
   margin-bottom: 118px;
 }
 
@@ -819,7 +813,8 @@ video {
 
 .breadcrumbs-item-link:focus {
   color: #ffffff;
-  outline: none ;
+  outline: 2px solid #02549E;
+  outline-offset: 1px;
 }
 
 .breadcrumbs-item-link:active {
@@ -874,7 +869,6 @@ video {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-right: auto;
   appearance: none;
   background-image: url("./images/arrow-select.svg");
   background-repeat: no-repeat;
@@ -902,6 +896,9 @@ video {
 
 .sorting-link-wrapper {
   display: flex;
+  width: 160px;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .sorting-link {
@@ -1030,13 +1027,12 @@ video {
 .range-wrapper-btn-catalog {
   display: block;
   margin-left: 70px;
-  margin-top: auto;
+  margin-top: 56px;
   border: none;
   padding: 0;
 }
 
 .btn-range {
-  height: 36px;
   background: #82B3D3;
   border-radius: 4px;
   padding: 8px 50px;
@@ -1281,6 +1277,7 @@ video {
   line-height: 23px;
   color: #FFFFFF;
   margin-left: 16px;
+  display: flex;
 }
 
 .catalog-item {
@@ -1348,8 +1345,9 @@ video {
 }
 
 .catalog-item-btn-blue {
+  width: 140px;
   background: #82B3D3;
-  padding: 8px 21px;
+  padding: 8px 20px;
 }
 
 .catalog-item-btn-blue:hover,
@@ -1364,6 +1362,7 @@ video {
 }
 
 .catalog-item-btn-green {
+  width: 140px;
   background: #7DB54F;
   padding: 8px 18px;
 }
