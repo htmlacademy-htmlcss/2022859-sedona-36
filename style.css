@@ -421,7 +421,8 @@ video {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
+  width: 490px;
   margin-bottom: 64px;
 }
 
@@ -457,22 +458,29 @@ video {
   min-height: 223px;
 }
 
-.housing {
+.housing::before {
+  content: "";
   background-image: url("./images/advantage-icon.svg");
-  background-position: top;
-  background-repeat: no-repeat;
+  width: 77px;
+  height: 72px;
+  margin-bottom: 30px;
 }
 
-.food {
+.food::before {
+  content: "";
   background-image: url("./images/advantage-icon2.svg");
-  background-position: top;
-  background-repeat: no-repeat;
+  width: 76px;
+  height: 72px;
+  margin-bottom: 30px;
 }
 
-.souvenirs {
+
+.souvenirs::before {
+  content: "";
   background-image: url("./images/advantage-icon3.svg");
-  background-position: top;
-  background-repeat: no-repeat;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 27px;
 }
 
 .service-content h3 {
@@ -483,7 +491,6 @@ video {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-top: 31px;
   margin-bottom: 29px;
 }
 
