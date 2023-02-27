@@ -189,40 +189,44 @@
         </button>
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
-            <legend class="auth-text">Дата заезда:</legend>
-            <label class="auth-label">
-              <input class="auth-from-field field" type="date" name="check-in" placeholder="27 апреля 2020">
-              <span class="placeholder-form">27 апреля 2020</span>
+          <label class="field-group">
+              <span class="auth-text">Дата заезда:</span>
+              <div class="auth-label-wrap">
+              <input class="auth-from-field field" type="text" name="check-in" placeholder="27 апреля 2020" value="27 апреля 2020">
+              <button class="btn-auth-form">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><g fill="#000" opacity=".3"><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
+              </button>
               <span class="auth-descr">Мы не можем отправить вас в прошлое.</span>
-            </label>
-          </p>
-          <p class="field-group">
-            <legend class="auth-text auth-exit">Дата выезда:</legend>
-            <label class="auth-label">
-              <input class="auth-from-field field" type="date" placeholder="1 сентября 2023">
-              <span class="placeholder-form">1 сентября 2023</span>
+            </div>
+          </label>
+          <label class="field-group">
+            <span class="auth-text auth-exit">Дата выезда:</span>
+            <div class="auth-label">
+              <input class="auth-from-field field" type="text" name="departure" placeholder="1 сентября 2023" value="1 сентября 2023">
+              <button class="btn-auth-form">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><g fill="#000" opacity=".3"><path d="M7.75 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z"/><path d="M17 4h-2V2h-1v2H6V2H5v2H3c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V5c0-.6-.5-1-1-1Zm0 12H3V9h14v7ZM3 8V5h2v2h1V5h8v2h1V5h2v3H3Z"/><path d="M10 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.25 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM7.75 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM5.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.25 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM14.5 12c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM14.5 13c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g></svg>
+              </button>
               <span class="auth-descr auth-description">На эти даты есть свободные номера. Пока есть.</span>
-            </label>
-          </p>
+            </div>
+          </label>
           <div class="field-group-wrapper">
-          <p class="field-group">
-            <legend class="auth-text auth-title">Взрослые:</legend>
-            <label class="auth-wrapper">
+            <label class="field-group">
+            <span class="auth-text auth-title">Взрослые:</span>
+            <div class="auth-wrapper">
               <button class="minus-btn" type="button">
                 <span class="visually-hidden">-</span>
                 <svg class="minus-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
                   </svg>
               </button>
-              <input class="field-small" value="2" type="number">
+              <input class="field-small" value="2" type="number" name="adults">
               <button class="plus-btn" type="button">
                 <span class="visually-hidden">+</span>
                 <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
               </button>
+            </div>
             </label>
-          </p>
-          <p class="field-group filed-group-kids">
+            <label class="field-group filed-group-kids">
             <span class="tooltip">
               <button class="tooltip-toggle" aria-labelledby="tooltip-date" type="button">
                 <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,22 +236,22 @@
               </button>
               <span class="tooltip-text" role="tooltip" id="tooltip-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
             </span>
-            <legend class="auth-text auth-tooltip">Дети:</legend>
-            <label class="auth-wrapper">
+            <span class="auth-text auth-tooltip">Дети:</span>
+            <div class="auth-wrapper">
               <button class="minus-btn" type="button">
                 <span class="visually-hidden">-</span>
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M3 9V11H17V9H3Z" fill="currentColor"/>
                   </svg>
               </button>
-              <input class="field-small" type="number" value="2">
+              <input class="field-small" type="number" value="2" name="kids">
               <button class="plus-btn" type="button">
                 <span class="visually-hidden">+</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/></svg>
               </button>
+            </div>
             </label>
-          </p>
-        </div>
+          </div>
         <button class="auth-btn">
           Найти
         </button>
