@@ -1010,19 +1010,25 @@ video {
   margin: 0;
 }
 
+
 .range-input:hover {
   background: #E6E6E6
 }
 
-.range-input:focus{
+.range-input:focus:placeholder-shown {
   background: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
 
-.range-input:active {
+.range-input:focus:not(:placeholder-shown){
+  outline: 2px solid #000000;
+}
+
+
+/* .range-input:active {
   background: #F2F2F2;
   border: 2px solid #000000;
-}
+} */
 
 .range-input-right{
   border-radius: 0 4px 4px 0;
@@ -1626,7 +1632,7 @@ video {
   opacity: 0.6;
 }
 
-.auth-form .field:focus {
+.auth-form .field:focus:placeholder-shown {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
@@ -1635,9 +1641,12 @@ video {
   opacity: 0.6;
 }
 
-.auth-form .field:active {
-  background: #F2F2F2;
+.auth-form .field:focus:not(:placeholder-shown) {
   outline:  2px solid #000000;
+}
+
+.auth-form .field:focus:not(:placeholder-shown) + span {
+  opacity: 1;
 }
 
 .auth-from-field::-webkit-datetime-edit-text {
