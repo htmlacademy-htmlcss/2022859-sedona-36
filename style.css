@@ -1770,14 +1770,24 @@ video {
   outline: none;
 }
 
-.minus-btn:focus-visible svg,
+.minus-btn:focus-visible svg {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+  color: #000000;
+}
+
 .plus-btn:focus-visible svg {
   outline: 3px solid #82B3D3;
   border-radius: 4px;
   color: #000000;
 }
 
-.minus-btn:active,
+.minus-btn:active {
+  color: #000000;
+  opacity: 0.2;
+  outline: none;
+}
+
 .plus-btn:active {
   color: #000000;
   opacity: 0.2;
