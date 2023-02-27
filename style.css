@@ -103,7 +103,7 @@ video {
 }
 
 .logo-link-header:focus-visible {
-  outline: 3px solid #68A2CA;
+  outline: 3px solid #000000;
 }
 
 .logo-link-header:active {
@@ -140,9 +140,10 @@ video {
 }
 
 .navigation-link:focus-visible,
-.navigation-link-user:focus-visible {
+.navigation-link-user:focus-visible{
   opacity: 0.6;
-  outline: 3px solid #68A2CA;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
 }
 
 .navigation-link:active,
@@ -171,7 +172,6 @@ video {
 .navigation-user {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0;
   margin-left: auto;
   margin-right: 70px;
@@ -188,8 +188,9 @@ video {
 }
 
 .navigation-link-user {
+  display: flex;
   position: absolute;
-  padding: 24px 13px;
+  padding: 22px 12px;
 }
 
 .nav-icons {
@@ -1020,15 +1021,10 @@ video {
   outline: 3px solid #83B3D3;
 }
 
-.range-input:focus:not(:placeholder-shown){
+.range-input:focus:not(:placeholder-shown) {
+  background: #F2F2F2;
   outline: 2px solid #000000;
 }
-
-
-/* .range-input:active {
-  background: #F2F2F2;
-  border: 2px solid #000000;
-} */
 
 .range-input-right{
   border-radius: 0 4px 4px 0;
@@ -1642,6 +1638,7 @@ video {
 }
 
 .auth-form .field:focus:not(:placeholder-shown) {
+  background: #F2F2F2;
   outline:  2px solid #000000;
 }
 
