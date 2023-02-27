@@ -1660,6 +1660,7 @@ video {
   background-color: #F2F2F2;
   border-radius: 4px;
   border: none;
+  padding: 0;
 }
 
 .auth-form .field-small:focus {
@@ -1750,15 +1751,17 @@ video {
 .plus-btn {
   position: absolute;
   right: 0;
-  height: 100%;
   border: none;
   background-color: inherit;
   padding: 13px 9px;
   color:  rgba(117, 97, 87, 0.3);;
 }
 
-.minus-btn:hover,
-.plus-btn:hover {
+.minus-btn:hover svg{
+  color: #000000;
+}
+
+.plus-btn:hover svg {
   color: #000000;
 }
 
