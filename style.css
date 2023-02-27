@@ -885,6 +885,7 @@ video {
 .sorting-index:hover {
   border: 2px solid #68a2ca;
 }
+
 .sorting-index:focus-visible {
   border: 2px solid #68a2ca;
   outline: none;
