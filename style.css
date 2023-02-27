@@ -1422,7 +1422,7 @@ video {
 .pagination-link {
   display: grid;
   place-items: center;
-  width: 60px;
+  min-width: 60px;
   min-height: 60px;
   font-weight: 700;
   font-size: 20px;
