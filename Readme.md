@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ярослав Беляев](https://up.htmlacademy.ru/htmlcss/36/user/2022859).
-* Наставник: `Михаил Данюшин`(https://htmlacademy.ru/profile/id225742).
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
