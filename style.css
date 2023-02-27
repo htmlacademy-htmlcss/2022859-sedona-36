@@ -562,7 +562,7 @@ video {
 .subscribe-index {
   position: relative;
   background-image: url("./images/index-footer.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -756,7 +756,6 @@ video {
 
 /* Catalog */
 .main-inner {
-  padding-top: 35px;
   flex-grow: 1;
   margin: 0 auto;
   background-color: #ffffff;
@@ -764,8 +763,8 @@ video {
   width: 100%;
 }
 
-.main-catalog {
-  background-size: 100% auto;
+.filter-catalog {
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./images/index-catalog-bg.jpg");
 }
@@ -776,9 +775,10 @@ video {
 }
 
 .filter {
-  min-height: 309px;
-  margin-bottom: 118px;
+  padding: 35px 70px 66px;
+  margin-bottom: 54px;
 }
+
 
 .filter-title {
   font-weight: 700;
@@ -904,6 +904,7 @@ video {
 .sorting-link-wrapper {
   display: flex;
   width: 160px;
+  gap: 8px;
   flex-wrap: wrap;
   margin-left: auto;
 }
@@ -916,7 +917,6 @@ video {
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 8px;
 }
 
 .sorting-link:hover {
@@ -934,10 +934,6 @@ video {
 
 .sorting-link-current{
   border: 2px solid #000000;
-}
-
-.sorting-link:nth-child(3n) {
-  margin-right: 0;
 }
 
 .catalog-filter {
@@ -1427,7 +1423,7 @@ video {
   display: grid;
   place-items: center;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
