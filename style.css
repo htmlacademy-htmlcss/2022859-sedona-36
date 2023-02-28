@@ -710,11 +710,6 @@ video {
   color: rgba(104, 162, 202, 0.3);
 }
 
-.footer-phone-item {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-phone-link {
   font-family: var(--main-font);
   font-weight: 400;
