@@ -257,7 +257,7 @@ video {
   left: 20px;
   width: 20px;
   height: 20px;
-  background: #7DB54F;
+  background: #7db54f;
   border-radius: 10px;
   font-weight: 400;
   font-size: 10px;
@@ -307,9 +307,9 @@ video {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  width: 620px;
   margin: 0 auto;
   margin-bottom: 25px;
+  padding: 0 290px;
   padding-top: 69px;
   color: #333333;
 }
@@ -338,7 +338,7 @@ video {
 .advantage-item {
   width: 400px;
   min-height: 385px;
-  background: #82B3D3;
+  background: #82b3d3;
   color: #ffffff;
   padding: 102px 85px;
 }
@@ -636,7 +636,7 @@ video {
 }
 
 .form-btn {
-  background: #82B3D3;
+  background: #82b3d3;
   border-radius: 0 4px 4px 0;
   border: 0;
 }
@@ -1042,7 +1042,7 @@ video {
 }
 
 .btn-range {
-  background: #82B3D3;
+  background: #82b3d3;
   border-radius: 4px;
   padding: 8px 50px;
   margin-bottom: 32px;
@@ -1055,7 +1055,7 @@ video {
 }
 
 .btn-range:active {
-  background: #82B3D3;
+  background: #82b3d3;
   color: rgba(255, 255, 255, 0.3)
 }
 
@@ -1355,7 +1355,7 @@ video {
 
 .catalog-item-btn-blue {
   width: 140px;
-  background: #82B3D3;
+  background: #82b3d3;
   padding: 8px 20px;
 }
 
@@ -1366,24 +1366,24 @@ video {
 }
 
 .catalog-item-btn-blue:active {
-  background: #82B3D3;
+  background: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-item-btn-green {
   width: 140px;
-  background: #7DB54F;
+  background: #7db54f;
   padding: 8px 18px;
 }
 
 .catalog-item-btn-green:hover,
 .catalog-item-btn-green:focus-visible {
-  background: #6C9E42;
+  background: #6c9e42;
   outline: none;
 }
 
 .catalog-item-btn-green:active {
-  background: #7DB54F;
+  background: #7db54f;
   color: rgba(255, 255, 255, 0.3)
 }
 
@@ -1434,7 +1434,7 @@ video {
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
-  background: #82B3D3;
+  background: #82b3d3;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -1442,12 +1442,12 @@ video {
 .pagination-link:hover,
 .pagination-link:focus-visible {
   background: #68a2ca;
-  border: 1px solid #82B3D3;
+  border: 1px solid #82b3d3;
   outline: none;
 }
 
 .pagination-link:active {
-  background: #82B3D3;
+  background: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1571,7 +1571,7 @@ video {
   top: 100%;
   left: 27%;
   text-align: center;
-  color: #FF5757;
+  color: #ff5757;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1762,13 +1762,13 @@ video {
 }
 
 .minus-btn:focus-visible svg {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
   color: #000000;
 }
 
 .plus-btn:focus-visible svg {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
   border-radius: 4px;
   color: #000000;
 }
