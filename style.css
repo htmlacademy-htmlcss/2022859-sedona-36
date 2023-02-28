@@ -1565,8 +1565,8 @@ video {
 .auth-descr {
   position: absolute;
   top: 100%;
+  left: 27%;
   text-align: center;
-  left: 20px;
   color: #FF5757;
   font-weight: 400;
   font-size: 16px;
@@ -1595,11 +1595,7 @@ video {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-}
-
-.auth-label {
-  position: relative;
-  display: flex;
+  padding-right: 50px;
 }
 
 .auth-form .field:hover {
@@ -1628,16 +1624,11 @@ video {
   opacity: 1;
 }
 
-.auth-label-wrap {
-  position: relative;
-  display: flex;
-}
-
 .btn-auth-form {
   display: flex;
   position: absolute;
   top: 50%;
-  left: 400px;
+  left: 93%;
   transform: translateY(-50%);
   border: none;
   padding: 0;
